@@ -1,0 +1,16 @@
+[project]
+name = "watermarked-docs"
+version = "1.0.0"
+description = "Bot do telegram para envio de documentos com marca d'água"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "pillow>=11.2.1",
+    "pydantic>=2.11.3",
+    "python-telegram-bot>=22.0",
+    "semgrep>=1.119.0",
+    "telegram>=0.0.1",
+]
+authors = [
+  {name = "Paulo Vitor Bettini de Paiva Lima", email = "paulovitorbal@gmail.com"},
+]
