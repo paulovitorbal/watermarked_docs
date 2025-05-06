@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  telegram_bot:
+    image: python:3.10-slim
+    restart: always
+    command:
+      - "python telegram_bot.py"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000" # Map container port to local port if needed
+    environment:
+      - PYTHONUNBUFFERED=1 # To ensure logs are visible in real-time
