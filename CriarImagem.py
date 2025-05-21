@@ -25,7 +25,7 @@ class CriarImagem:
         print("Criando imagem em disco")
         pessoa = None
         for p in self.pessoas:
-            if p.get("indice") == self.request.nome_pessoa:
+            if p.get("indice") == self.request.nome_pessoa and p.get("is_parent") is not True:
                 pessoa = p
                 break
         nome_pessoa = pessoa["nome"]
